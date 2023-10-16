@@ -1,70 +1,65 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Parki-Pen
 
-## Available Scripts
+Parki-Pen represents the synergy of cutting-edge technology with the clinical applications of Parkinson's Disease. At its core, the app implements an accuracy algorithm of Euclidean distance measurement, a mathematical method renowned for its precision in assessing fine motor skills. Users are prompted to trace a spiral, a motion that closely mimics real-world motor tasks, and then analyze the intricacies of their movement. This technology enables an accurate assessment of handwriting accuracy percentage, a crucial aspect of fine motor control, providing users with a detailed chart showcasing their progress over time. The Users are able to select a trial period ranging from 7 days, 14 days, to 30 days to experience the tangible benefits of the Parki-Pen, witness their motor skill enhancements, and embrace the advice that comes with personalized insights and actionable advice.
 
-In the project directory, you can run:
+The website is live at www.parkipen.org.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Client:** ReactJS
 
-### `npm test`
+**Server:** Firebase
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Server management code is handled on the client side, while server security rules were integrated on Firebase.
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Clone project
+```bash
+git clone https://github.com/Suchith3004/hokiesmartsheet_backend.git
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Install dependencies
+```bash
+cd pdapp
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Login to Firebase - [Add your Firebase project configuration variables to the enviornment variables](https://firebase.google.com/docs/firestore/quickstart)
+```bash
+firebase login
+```
+    
+## Deployment
 
-### `npm run eject`
+Build project files for deployment
+```bash
+npm run build
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+[Deploy project with Firebase hosting](https://firebase.google.com/docs/hosting)
+```bash
+firebase deploy --only hosting
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Run Locally
 
-## Learn More
+Launch Firebase emulators
+```
+firebase emulators:start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Launch the website locally
+```bash
+npm run start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Authors
 
-### Code Splitting
+- Surabhi Shastry - [@surabhishastry](https://www.github.com/surabhishastry)
+- Suchith Suddala - [@suchith3004](https://www.github.com/suchith3004)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
